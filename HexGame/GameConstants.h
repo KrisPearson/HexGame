@@ -6,7 +6,7 @@ const bool IS_CONSOLE_MODE = true;
 
 const double GAME_SPEED = 33.33;
 
-const int BOARD_SIZE = 3;
+const int BOARD_SIZE = 5;
 
 enum class NodeOwner {
 	None = 0,

@@ -13,8 +13,8 @@ private:
 	HexgameCore();
 
 	// Stop the compiler generating methods of copy the object
-	HexgameCore(HexgameCore const& copy);            // Not Implemented
-	HexgameCore& operator=(HexgameCore const& copy); // Not Implemented
+	HexgameCore(HexgameCore const& copy);            
+	HexgameCore& operator=(HexgameCore const& copy); 
 
 public:
 
@@ -58,18 +58,10 @@ private:
 	// Handles input and output based on the current game state TODO: Implement state-machine
 	void GameLoop();
 
-
-
-
-
 	bool TimerUpdate();
-
 
 	void PushState(std::unique_ptr<State::GameStateBase> state);
 	void PopState();
-
-
-
 
 	// Stores the last node modified by a player
 	Node* lastPlacedNode = nullptr;
@@ -93,9 +85,6 @@ private:
 	double frameCount;
 	double startTime;
 	double lastTime;
-
-
-
 
 };
 

@@ -10,7 +10,6 @@ using namespace std;
 
 State::GameStateMenu::GameStateMenu(HexgameCore & application) 
 	: GameStateBase(application) {
-
 }
 
 State::GameStateMenu::~GameStateMenu() {
@@ -18,20 +17,23 @@ State::GameStateMenu::~GameStateMenu() {
 }
 
 void State::GameStateMenu::Input() {
-
+	// Handle Input (input could be handled via Update in player object?)
 }
 
 void State::GameStateMenu::Update(float dt) {
-
+	// Update Logic
 }
 
 void State::GameStateMenu::Draw() {
-
+	// Render Graphics
 }
 
 void State::GameStateMenu::UpdateConsole() {
 	cout << "Welcome to HEX" << endl;
 	cout << "==============" << endl << endl;
+
+	cout << "Attempt to create a path from one side of the board to the other." << endl;
+	cout << "Red wins if a path is created from Top to Bottom, and Blue wins if a path is created from Left to Right" << endl << endl;
 
 	cout << "Please choose your game mode." << endl;
 	cout << "[1] Human V Human" << endl;

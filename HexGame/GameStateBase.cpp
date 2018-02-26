@@ -1,4 +1,3 @@
 #include "GameStateBase.h"
 
-State::GameStateBase::~GameStateBase() {
-}
+// TODO: Consider if .cpp is necessary

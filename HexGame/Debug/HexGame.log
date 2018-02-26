@@ -1,10 +1,11 @@
 ﻿  ComputerInputComponent.cpp
-s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(133): warning C4018: '<': signed/unsigned mismatch
-  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(45): note: see reference to function template instantiation 'AIMove ComputerInputComponent::GetBestMove<HexNode>(const Graph<HexNode> &,int)' being compiled
-s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(142): warning C4018: '<': signed/unsigned mismatch
+s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(147): warning C4018: '<': signed/unsigned mismatch
+  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(47): note: see reference to function template instantiation 'AIMove ComputerInputComponent::GetBestMove<HexNode>(const Graph<HexNode> &,int,int,int)' being compiled
+s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(156): warning C4018: '<': signed/unsigned mismatch
 s:\github\hexgame\hexgame\hexgame\graph.h(92): warning C4018: '<': signed/unsigned mismatch
   s:\github\hexgame\hexgame\hexgame\graph.h(91): note: while compiling class template member function 'bool Graph<HexNode>::FindNode(int,int,Node *&) const'
-  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(106): note: see reference to function template instantiation 'bool Graph<HexNode>::FindNode(int,int,Node *&) const' being compiled
-  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(58): note: see reference to class template instantiation 'Graph<HexNode>' being compiled
-  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(45): note: see reference to function template instantiation 'AIMove ComputerInputComponent::GetBestMove<HexNode>(const Graph<HexNode> &,int)' being compiled
+  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(120): note: see reference to function template instantiation 'bool Graph<HexNode>::FindNode(int,int,Node *&) const' being compiled
+  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(80): note: see reference to class template instantiation 'Graph<HexNode>' being compiled
+  s:\github\hexgame\hexgame\hexgame\computerinputcomponent.cpp(47): note: see reference to function template instantiation 'AIMove ComputerInputComponent::GetBestMove<HexNode>(const Graph<HexNode> &,int,int,int)' being compiled
+     Creating library S:\GitHub\HexGame\HexGame\Debug\HexGame.lib and object S:\GitHub\HexGame\HexGame\Debug\HexGame.exp
   HexGame.vcxproj -> S:\GitHub\HexGame\HexGame\Debug\HexGame.exe

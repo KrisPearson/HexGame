@@ -12,7 +12,7 @@
 #include "ComputerInputComponent.h"
 
 #define NOMINMAX
-#include "windows.h" // TODO: Adapt to platform
+#include "windows.h" // TODO: Adapt to suit platform
 
 
 #include <iostream>
@@ -21,14 +21,12 @@ using namespace std;
 
 
 HexgameCore::HexgameCore() {
-
 }
 
 
 HexgameCore::~HexgameCore() {
 	delete hexGraph;
 }
-
 
 void HexgameCore::SetupGame() {
 	//TODO: Perform Initial SDL tasks here...
@@ -38,7 +36,6 @@ void HexgameCore::SetupGame() {
 void HexgameCore::StartGame() {
 
 	hexGraph = new Graph<HexNode>(BOARD_SIZE);
-	hexGraph->PrintGraph();
 
 	PushState(std::make_unique<State::GameStateMenu>(*this)); 
 
@@ -64,7 +61,7 @@ void HexgameCore::GameLoop() {
 		}
 
 
-
+		/* 
 		//SDL_Delay(10);
 		//GetUserInput();
 		//Update();
@@ -77,7 +74,7 @@ void HexgameCore::GameLoop() {
 		//int colNum;
 
 		//players[currentPlayerIndex].GetInput();
-		/*
+		
 
 		cout << players[currentPlayerIndex].GetName() << " - Please Enter Hex Node Coordinates." << endl;
 		cout << "x: ";

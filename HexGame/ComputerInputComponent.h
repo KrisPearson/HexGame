@@ -43,7 +43,18 @@ public:
 private:
 
 	template <typename T>
-	AIMove GetBestMove(const Graph<T>& graph, int player);
+	AIMove GetBestMove(const Graph<T>& graph, int player, int alpha, int beta);
+
+
+
+
+
+	template <typename T>
+	AIMove NEWGetBestMove(const Graph<T>& graph, int player, int alpha, int beta);
+	//https://stackoverflow.com/questions/18816088/conversion-of-minimax-with-alpha-beta-pruning-to-negamax
+
+
+	int Minimax(const AIMove &moveState, int player, int depth, int alpha, int beta);
 
 
 	//template <typename T>
@@ -54,5 +65,6 @@ private:
 
 
 	Node* lastTestedNode;
+
 };
 

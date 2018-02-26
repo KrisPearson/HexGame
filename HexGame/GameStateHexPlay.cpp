@@ -18,8 +18,7 @@ State::GameStateHexPlay::~GameStateHexPlay() {
 
 
 void State::GameStateHexPlay::Input() {
-	//listen for input ...
-
+	// Handle Input (input could be handled via Update in player object?
 }
 
 void State::GameStateHexPlay::Update(float dt) {
@@ -31,6 +30,9 @@ void State::GameStateHexPlay::Draw() {
 }
 
 void State::GameStateHexPlay::UpdateConsole() {
+
+	HexgameCore::GetInstance().GetGraph()->PrintGraph();
+
 	Player* currentPlayer = HexgameCore::GetInstance().GetCurrentPlayer();
 	currentPlayer->AllowInput(true);
 	if (currentPlayer != nullptr) {
@@ -77,12 +79,8 @@ void State::GameStateHexPlay::UpdateConsole() {
 
 	if (HexgameCore::GetInstance().CheckForPath()) {
 		cout << "GAME OVER!" << endl;
-		//gameOver = true;
 		// TODO: Switch Game State
 	}
-
-
-	HexgameCore::GetInstance().GetGraph()->PrintGraph();
 
 	HexgameCore::GetInstance().NextPlayer();
 
